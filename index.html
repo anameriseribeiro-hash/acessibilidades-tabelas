@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Acessibilidade Tabelas</title>
+</head>
+<body>
+    <h1>Tabela com Scope</h1>
+    <table>
+        <tr>
+            <th rowspan="2" colspan="2"> Tabela de vendas</th>
+            <th colspan="3" scope="colgroup">Quantidade vendida</th>
+        </tr>
+        <tr>
+            <th scope="col">Franciso Beltão</th>
+            <th scope="col">Dois Vizinhos</th>
+            <th scope="col">Pato Branco</th>
+        </tr>
+        <tr>
+            <th rowspan="3" scope="rowgroup">Produtos</th>
+            <th scope="row">Teclados</th>
+            <td>81</td>
+            <td>72</td>
+            <td>49</td>
+        </tr>
+        <tr>
+            <th scope="row">Mouse</th>
+            <td>93</td>
+            <td>14</td>
+            <td>59</td>
+        </tr>
+        <tr>
+            <th scope="row">MousePad</th>
+            <td>13</td>
+            <td>49</td>
+            <td>95</td>
+        </tr>
+    </table>
+        <h1>Tabela com Id e Headers</h1>
+    <table>
+        <tr>
+            <th rowspan="2" colspan="2"> Tabela de vendas</th>
+            <th colspan="3">Quantidade vendida</th>
+        </tr>
+        <tr>
+            <th>Franciso Beltão</th>
+            <th>Dois Vizinhos</th>
+            <th>Pato Branco</th>
+        </tr>
+        <tr>
+            <th id="Produtos" rowspan="3">Produtos</th>
+            <th id="teclados">Teclados</th>
+            <td headers="quantidade-vendas cidade-franciso-beltao produtos teclados">81</td>
+            <td headers="quantidade-vendas cidade-dois-vizinhos produtos teclados">72</td>
+            <td headers="quantidade-vendas cidade-pato-branco produtos teclados">49</td>
+        </tr>
+        <tr>
+            <th id="mouses">Mouses</th>
+            <td headers="quantidade-vendas cidade-franciso-beltao produtos teclados">93</td>
+            <td headers="quantidade-vendas cidade-dois-vizinhos produtos teclados">14</td>
+            <td headers="quantidade-vendas cidade-pato-branco produtos teclados">59</td>
+        </tr>
+        <tr>
+            <th>MousePad</th>
+            <td>13</td>
+            <td>49</td>
+            <td>95</td>
+        </tr>
+    </table>      
+</body>
+</html>
